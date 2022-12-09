@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.wrapper {
+  max-width: 1000px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial、Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
+}
+
+header ul {
+  display: flex;
+  width: 100%;
+  color: #fff;
+  margin-right: 0;
+  margin-left: auto;
+}/*# sourceMappingURL=style.css.map */

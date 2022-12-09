@@ -1,0 +1,12 @@
+header {
+  ul {
+    display: flex;
+    width: 100%;
+    color: #fff;
+
+    @include mq(pc) {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+}
