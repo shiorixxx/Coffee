@@ -17,4 +17,10 @@ header ul {
   display: flex;
   width: 100%;
   color: #fff;
+}
+@media screen and (min-width: 1025px) {
+  header ul {
+    margin-right: 0;
+    margin-left: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
