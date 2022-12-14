@@ -1,4 +1,8 @@
 @charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
 .wrapper {
   max-width: 1000px;
   padding: 0 16px;
@@ -9,10 +13,19 @@ img {
   width: 100%;
 }
 
+p {
+  font-size: 1.6rem;
+}
+
 body {
   font-family: "Helvetica Neue", "Arial、Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", "sans-serif";
 }
 
+header {
+  position: absolute;
+  right: 5%;
+  top: 10px;
+}
 header ul {
   display: flex;
   width: 100%;
@@ -23,4 +36,22 @@ header ul {
     margin-right: 0;
     margin-left: auto;
   }
+}
+header ul li {
+  margin-left: 27px;
+  font-weight: bold;
+  font-size: 1.4;
+  text-shadow: 1px 1px 2px rgba(18, 18, 18, 0.16);
+}
+header ul li:first-of-type {
+  margin-left: 0;
+}
+
+.mainvisual {
+  position: relative;
+}
+.mainvisual h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }/*# sourceMappingURL=style.css.map */
