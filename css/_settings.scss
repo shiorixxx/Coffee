@@ -1,3 +1,5 @@
+@use "../css/config/responsive" as *; //名前を週略することが出来る
+
 html {
   font-size: 62.5%;
 }
@@ -15,6 +17,13 @@ p {
 }
 .contents {
   background-color: #fff;
-  padding: 80px 0;
+
   text-align: center;
+
+  @include mq(pc) {
+    padding: 80px 0;
+  }
+  @include mq(sp) {
+    padding: 33px 0;
+  }
 }

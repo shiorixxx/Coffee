@@ -1,13 +1,18 @@
 @use "../css/config/responsive" as *;
 
 .menu-container {
-  display: flex;
-  justify-content: center;
   width: 100%;
+  @include mq(pc) {
+    display: flex;
+    justify-content: center;
+  }
+
   .menu-column {
-    width: 50%;
-    border-right: #000 1px solid;
-    padding: 0 45px;
+    @include mq(pc) {
+      width: 50%;
+      border-right: #000 1px solid;
+      padding: 0 45px;
+    }
 
     &:last-child {
       border-right: none;
@@ -15,7 +20,6 @@
   }
   .menu_item {
     display: flex;
-
     font-size: 1.4rem;
 
     dt {

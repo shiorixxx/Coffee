@@ -1,1 +1,18 @@
 @use "../css/config/responsive" as *; //名前を週略することが出来る
+.map {
+  width: 100%;
+  height: auto;
+  margin-bottom: 22px;
+  iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9; ////アスペクト比（縦横比）を指定
+  }
+}
+address {
+  font-size: 1.4rem;
+  color: #383e45;
+  font-weight: normal;
+  text-align: left;
+  line-height: 1.69;
+}
