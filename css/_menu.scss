@@ -1,38 +1,41 @@
 @use "../css/config/responsive" as *;
+#menu {
+  margin-top: 20px;
 
-.menu-container {
-  width: 100%;
-  @include mq(pc) {
-    display: flex;
-    justify-content: center;
-  }
-
-  .menu-column {
+  .menu-container {
+    width: 100%;
     @include mq(pc) {
-      width: 50%;
-      border-right: #000 1px solid;
-      padding: 0 45px;
+      display: flex;
+      justify-content: center;
     }
 
-    &:last-child {
-      border-right: none;
-    }
-  }
-  .menu_item {
-    display: flex;
-    font-size: 1.4rem;
+    .menu-column {
+      @include mq(pc) {
+        width: 50%;
+        border-right: #000 1px solid;
+        padding: 0 45px;
+      }
 
-    dt {
-      width: 90%;
-      border-bottom: 1px dotted #000;
-      margin-bottom: 30px;
-      font-weight: normal;
-      padding-bottom: 2px;
-      text-align: left;
+      &:last-child {
+        border-right: none;
+      }
     }
-    dd {
-      width: 10%;
-      text-align: right;
+    .menu_item {
+      display: flex;
+      font-size: 1.4rem;
+
+      dt {
+        width: 90%;
+        border-bottom: 1px dotted #000;
+        margin-bottom: 30px;
+        font-weight: normal;
+        padding-bottom: 2px;
+        text-align: left;
+      }
+      dd {
+        width: 10%;
+        text-align: right;
+      }
     }
   }
 }

@@ -1,10 +1,18 @@
 @use "../css/config/responsive" as *; //名前を週略することが出来る
-header {
+#header {
   position: absolute;
-  right: 5%;
-  top: 10px;
+  min-height: 100vh;
+  background-image: url(../img/mainvisual.jpg); //メインビジュアル
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 20px 40px;
+  position: relative;
+
   ul {
     display: flex;
+    justify-content: flex-end;
+
     width: 100%;
     color: #fff;
     @include mq(pc) {
@@ -14,15 +22,22 @@ header {
 
     li {
       margin-left: 27px;
-      font-weight: bold;
-      font-size: 1.4;
 
       &:first-of-type {
         margin-left: 0;
       }
 
-      text-shadow: 1px 1px 2px rgba(18, 18, 18, 0.16);
-      //xがx軸の距離、yがy軸の距離、bがぼかしの距離、そして#113348の20%が影の色ということです。CSSの記述だとbox-shadow: 0 0 5px 0 rgba(17, 51, 72, 0.2);といった感じで表現できるはずです！
+      a {
+        font-weight: bold;
+        font-size: 1.4;
+        transition: all 0.3 ease;
+        text-shadow: 1px 1px 2px rgba(18, 18, 18, 0.16);
+        //xがx軸の距離、yがy軸の距離、bがぼかしの距離、そして#113348の20%が影の色ということです。CSSの記述だとbox-shadow: 0 0 5px 0 rgba(17, 51, 72, 0.2);といった感じで表現できるはずです！
+
+        &:hover {
+          color: #e03131;
+        }
+      }
     }
   }
 }
