@@ -1,6 +1,7 @@
 @use "../css/config/responsive" as *; //名前を週略することが出来る
-#mainvisual {
-  position: relative;
 
-  margin-bottom: 20px;
+#about {
+  .about-contents {
+    background: #fff;
+  }
 }

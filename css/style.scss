@@ -3,5 +3,9 @@
 @use "config/responsive";
 @use "settings";
 @use "config/fonts";
+@use "common";
 @use "header";
 @use "mainvisual";
+@use "menu";
+@use "about";
+@use "location";

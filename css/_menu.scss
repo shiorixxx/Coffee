@@ -1,0 +1,34 @@
+@use "../css/config/responsive" as *;
+
+.menu-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  .menu-column {
+    width: 50%;
+    border-right: #000 1px solid;
+    padding: 0 45px;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .menu_item {
+    display: flex;
+
+    font-size: 1.4rem;
+
+    dt {
+      width: 90%;
+      border-bottom: 1px dotted #000;
+      margin-bottom: 30px;
+      font-weight: normal;
+      padding-bottom: 2px;
+      text-align: left;
+    }
+    dd {
+      width: 10%;
+      text-align: right;
+    }
+  }
+}
