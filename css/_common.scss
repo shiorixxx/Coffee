@@ -36,6 +36,11 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+
+  @include mq(sp) {
+    height: 94px;
+    background-attachment: scroll;
+  }
 }
 
 .img_bg_01 {

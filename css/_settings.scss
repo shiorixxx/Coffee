@@ -9,6 +9,9 @@ html {
   margin: 0 auto;
   padding: 90px 16px 150px 16px;
   text-align: center; //一旦中央全部寄せ
+  @include mq(sp) {
+    padding: 30px 16px 60px 16px;
+  }
 }
 img {
   width: 100%;
